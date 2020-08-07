@@ -1,11 +1,16 @@
 # ren
 
-rename multiples files with command `ren`
+rename multiples files with command `ren` 🤼‍♂️
 
 ## Usage
-ren.ts --show  # show rename files
-ren.ts --force  # rename files
-ren.ts  # defaut copy files with new name
+
+
+***
+
+* `ren.ts {old_string} {new_string} {files}`| `*.txt`
+* `ren.ts --show`  # show rename files
+* `ren.ts --force`  # rename files
+* `ren.ts`  # defaut copy files with new name
 
 
 ## Install
