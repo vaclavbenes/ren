@@ -2,11 +2,18 @@
 
 rename multiples files with command `ren`
 
+## Usage
+ren.ts --show  # show rename files
+ren.ts --force  # rename files
+ren.ts  # defaut copy files with new name
+
 
 ## Install
 `
 ./install.ts
 `
+
+
 
 
 ## examples
