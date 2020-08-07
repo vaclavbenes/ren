@@ -4,9 +4,6 @@ rename multiples files with command `ren` 🤼‍♂️
 
 ## Usage
 
-
-***
-
 * `ren.ts {old_string} {new_string} {files}`| `*.txt`
 * `ren.ts --show`  # show rename files
 * `ren.ts --force`  # rename files
