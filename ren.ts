@@ -118,15 +118,22 @@ class File {
     const splitedPath = path.split("/");
     return splitedPath[splitedPath.length - 1];
   }
+  async isFile(): Promise<boolean> {
+    const fileInfo = await Deno.lstat(this.path);
+    return fileInfo.isFile;
+  }
 }
 
-const main = () => {
+async function main() {
   for (const path of paths) {
     const stringPath = path as string;
     const file = new File(File.getName(stringPath), stringPath);
-    replace(file, _first, _second);
+
+    if (file.isFile()) {
+      replace(file, _first, _second);
+    }
   }
-};
+}
 
 const args = parse(Deno.args, {
   boolean: ["force", "help", "show"],

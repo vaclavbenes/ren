@@ -30,6 +30,8 @@ const bracketExpression = (value: string): string[] | Range[] => {
     const rangeOfValues = range(min, max);
     if (rangeOfValues) return rangeOfValues;
   }
+  console.log("data");
+
   //  its normal string
   return [];
 };
